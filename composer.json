@@ -1,0 +1,10 @@
+{
+    "name": "pkiragu/php",
+    "authors": [
+        {
+            "name": "Phillis Kiragu",
+            "email": "kiragu.w.phillis@gmail.com"
+        }
+    ],
+    "require": {}
+}
