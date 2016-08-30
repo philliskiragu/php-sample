@@ -6,7 +6,6 @@ class Shapes
     protected $name;
 
     // constructor that will require a name
-    // playing with this. more research needed
     public function __construct($name){
         $this->name = $name;
     }
@@ -60,13 +59,9 @@ class Circle extends Shapes {
         return 2 * $this->radius * self::PI;
     }
 
-    // get the circle surface area (2 * pi * r^2)
-    public function getCircleSurfaceArea($radius){
-        $this->radius = $radius;
-        return 2 * pow($this->radius, 2) * self::PI;
-    }
 }
-
+// creating an object
 $shapeObject = new Circle(7);
-echo $shapeObject->getCircleArea($shapeObject->getRadius());
+echo $shapeObject->getName() . "  area = " . $shapeObject->getCircleArea($shapeObject->getRadius());
+
 ?>
