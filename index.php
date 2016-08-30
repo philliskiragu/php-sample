@@ -1,5 +1,7 @@
 <?php
+
 namespace shapes;
+
 class Shapes
 {
     // each shape has a name
