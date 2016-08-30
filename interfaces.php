@@ -1,6 +1,10 @@
 <?php
 namespace shapes;
 
+//function __autoload($class){
+//    require('index'  . '.php');
+//}
+
 interface itriangle{
     // set the contract
     // method should have no body
@@ -59,6 +63,9 @@ class EquilateralTriangle extends Triangle implements itriangle{
 
 // the object
 $triangleobject = new Triangle(4,4,4);
-echo $triangleobject->getName() . "  area = " . $triangleobject->getTrianglePerimeter(6,6,6);
+echo $triangleobject->getName() . "  Perimeter = " . $triangleobject->getTrianglePerimeter(7,7,7);
+
+$equiObject = new EquilateralTriangle(7,7,7);
+echo $equiObject->getSides(7,7,7) . "  Perimeter = " . $triangleobject->getTrianglePerimeter(7,7,7);
 
 ?>
