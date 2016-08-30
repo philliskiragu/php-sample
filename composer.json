@@ -6,5 +6,16 @@
             "email": "kiragu.w.phillis@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+
+    "autoload": {
+        "classmap" : [
+            "index.php",
+            "interfaces.php"
+        ],
+        "psr-4": {
+            "Shapes\\" : "Shapes"
+        }
+    }
+
 }
